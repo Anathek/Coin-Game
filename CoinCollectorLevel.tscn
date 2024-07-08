@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://dq4wan2ewnhso"]
+[gd_scene load_steps=5 format=3 uid="uid://dq4wan2ewnhso"]
 
 [ext_resource type="Script" path="res://Player.gd" id="1_becvh"]
 [ext_resource type="Texture2D" uid="uid://dxr6remib7u7n" path="res://Sprites/Player.png" id="2_1pwga"]
+[ext_resource type="PackedScene" uid="uid://dnaj16aavgvqg" path="res://coin.tscn" id="3_bfckm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pen1u"]
 size = Vector2(53, 66)
@@ -20,3 +21,27 @@ shape = SubResource("RectangleShape2D_pen1u")
 
 [node name="Camera" type="Camera2D" parent="Player"]
 zoom = Vector2(1.5, 1.5)
+
+[node name="Coin" parent="." instance=ExtResource("3_bfckm")]
+position = Vector2(-272, 35)
+
+[node name="Coin2" parent="." instance=ExtResource("3_bfckm")]
+position = Vector2(-261, -119)
+
+[node name="Coin3" parent="." instance=ExtResource("3_bfckm")]
+position = Vector2(272, -142)
+
+[node name="Coin4" parent="." instance=ExtResource("3_bfckm")]
+position = Vector2(-172, 133)
+
+[node name="Coin5" parent="." instance=ExtResource("3_bfckm")]
+position = Vector2(128, 171)
+
+[node name="Coin6" parent="." instance=ExtResource("3_bfckm")]
+position = Vector2(231, -53)
+
+[node name="Coin7" parent="." instance=ExtResource("3_bfckm")]
+position = Vector2(257, 88)
+
+[node name="Coin8" parent="." instance=ExtResource("3_bfckm")]
+position = Vector2(-89, -140)
